@@ -135,7 +135,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" data-netlify="true" action="/success/">
+								<form method="post" data-netlify="true" action="/success/" data-netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -150,6 +150,7 @@
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
+									<div data-netlify-recaptcha="true"></div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
